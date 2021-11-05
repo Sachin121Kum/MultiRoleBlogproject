@@ -14,12 +14,14 @@ class UsersTableSeeder extends Seeder
     {
         $admin = User::create([
             'userid' => 'admin101',
+            'role_id' => 1,
             'name' => 'Admin',
             'email' => 'admin@admin.com',
             'password' => bcrypt('admin'),
         ]);
         $user = User::create([
             'userid' => 'user101',
+            'role_id' => 2,
             'name' => 'User',
             'email' => 'user@user.com',
             'password' => bcrypt('user'), 
